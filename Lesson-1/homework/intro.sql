@@ -50,11 +50,3 @@ VALUES
 
 
 
-USE master;
-
-RESTORE DATABASE AdventureWorksDW2022
-FROM DISK = 'C:\Backups\AdventureWorksDW2022.bak'
-WITH 
-    MOVE 'AdventureWorksDW2022_Data' TO 'C:\Program Files\Microsoft SQL Server\MSSQL15.MSSQLSERVER\MSSQL\DATA\AdventureWorksDW2022.mdf',
-    MOVE 'AdventureWorksDW2022_Log' TO 'C:\Program Files\Microsoft SQL Server\MSSQL15.MSSQLSERVER\MSSQL\DATA\AdventureWorksDW2022_log.ldf',
-    REPLACE;
